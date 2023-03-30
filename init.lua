@@ -35,7 +35,6 @@ I hope you enjoy your Neovim journey,
 
 P.S. You can delete this when you're done too. It's your config now :)
 --]]
-
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
@@ -74,6 +73,13 @@ require('lazy').setup({
   'kdheepak/lazygit.nvim',
   'ggandor/lightspeed.nvim',
   'echasnovski/mini.nvim',
+  {
+  "https://git.sr.ht/~nedia/auto-save.nvim",
+  config = function()
+    require("auto-save").setup()
+  end
+  },
+  {'ZhiyuanLck/smart-pairs', event = 'InsertEnter', config = function() require('pairs'):setup() end},
   {
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",
