@@ -256,7 +256,11 @@ require('lazy').setup({
   -- { import = 'custom.plugins' },
 }, {})
 require('mini.indentscope').setup()
-require("nvim-tree").setup()
+require("nvim-tree").setup({
+  filters = {
+    dotfiles = true,
+    },
+})
 require("copilot").setup(options)
 -- require("copilot.suggestion").toggle_auto_trigger()
 
@@ -360,10 +364,10 @@ vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { de
 -- See `:help nvim-treesitter`
 require('nvim-treesitter.configs').setup {
   -- Add languages to be installed here that you want installed for treesitter
-  ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'typescript', 'help', 'vim' },
+  ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'typescript', 'help', 'vim', 'query'},
 
   -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
-  auto_install = false,
+  auto_install = true,
 
   highlight = { enable = true },
   indent = { enable = true, disable = { 'python' } },
