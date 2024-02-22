@@ -1,4 +1,18 @@
 # 💤 LazyVim
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+
+
+## Using brew in both linux and MacOs
+
+`brew install ripgrep fzf terraform kubectl shellcheck ansible ansible-lint isort black lazygit`
+
+## Linux
+
+### Required packages
+
+- npm
+- gcc
+- g++
+
+`sudo apt install gcc g++ npm`
