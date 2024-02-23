@@ -3,3 +3,4 @@
 -- Add any additional options here
 --
 vim.o.ignorecase = true
+vim.opt.winbar = "%=%m %f"
