@@ -5,7 +5,7 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 
 ## Using brew in both linux and MacOs
 
-`brew install ripgrep fzf terraform kubectl shellcheck ansible ansible-lint isort black lazygit`
+`brew install ripgrep fzf terraform kubectl shellcheck ansible ansible-lint isort black lazygit tfsec`
 
 ## Linux
 
