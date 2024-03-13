@@ -13,7 +13,7 @@ return {
           -- Use a sub-list to run only the first available formatter
           javascript = { { "prettierd", "prettier" } },
           terraform = { { "tflint" } },
-          yaml = { { "yaml" } },
+          yaml = { { "yamlfmt" } },
         },
         format_on_save = {
           lsp_fallback = true,
