@@ -12,7 +12,7 @@ return {
           python = { "isort", "black" },
           -- Use a sub-list to run only the first available formatter
           javascript = { { "prettierd", "prettier" } },
-          terraform = { { "tflint" } },
+          terraform = { { "terraform-ls", "tflint" } },
           yaml = { { "yamlfmt" } },
         },
         format_on_save = {

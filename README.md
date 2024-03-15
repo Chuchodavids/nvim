@@ -8,7 +8,7 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 
 ## Using brew in both linux and MacOs
 
-`brew install terraform kubectl ansible lazygit yamlfmt tfsec markdownlint-cli`
+`brew install terraform kubectl ansible lazygit yamlfmt tfsec markdownlint-cli terraform-ls`
 
 ## Linux setup
 
