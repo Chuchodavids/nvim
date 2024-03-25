@@ -8,12 +8,9 @@ return {
           bash = { "shfmt", "shellcheck" },
           shell = { "shfmt", "shellcheck" },
           lua = { "stylua" },
-          -- Conform will run multiple formatters sequentially
           python = { "isort", "black" },
-          -- Use a sub-list to run only the first available formatter
-          javascript = { { "prettierd", "prettier" } },
           terraform = { { "terraform-ls", "tflint" } },
-          yaml = { { "yamlfmt" } },
+          yaml = { { "prettier" } },
         },
         format_on_save = {
           lsp_fallback = true,
