@@ -9,8 +9,8 @@ return {
           shell = { "shfmt", "shellcheck" },
           lua = { "stylua" },
           python = { "isort", "black" },
-          terraform = { { "terraform-ls", "tflint" } },
-          yaml = { { "prettier" } },
+          terraform = { "terraform-ls", "tflint" },
+          yaml = { "prettier" },
         },
         format_on_save = {
           lsp_fallback = true,
