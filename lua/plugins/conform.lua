@@ -11,6 +11,7 @@ return {
           python = { "isort", "black" },
           terraform = { "terraform-ls", "tflint" },
           yaml = { "prettier" },
+          hcl = { "terragrunt_hclfmt" },
         },
         format_on_save = {
           lsp_fallback = true,
